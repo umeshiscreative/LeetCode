@@ -1,12 +1,12 @@
 ### Two Sum Problem
 
-def twoSum(nums, target):
+class Solution(object):
+    def twoSum(self, nums, target):
         """
         :type nums: List[int]
         :type target: int
         :rtype: List[int]
         """
-        # Solution 1 O(n^2)
         # for i in range(len(nums)):
         #     first = nums[i]
         #     for j in range(i+1, len(nums)):
@@ -15,7 +15,6 @@ def twoSum(nums, target):
         #             return [i, j]
         # return []
 
-        #Solution 2 O(nlogn)
         newArr = nums[:]
         newArr.sort()
 
